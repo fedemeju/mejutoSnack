@@ -9,9 +9,10 @@
     --oscuro:rgb(53, 45, 43);
     --medio: rgb(136, 134, 133);
     --claro: rgb(235, 229, 225);
+    --oscuroT: rgba(53, 45, 43, 0.3)
 }
 body{
-    background: var(--medio);
+    background: var(--claro);
     height: 100%;
 }
 
@@ -46,6 +47,9 @@ html{
 .navbar-toggler-icon{
     background: var(--medio);
 }
+.btn-close {
+    color: var(--claro);
+}
 
 /* HEADER */
 
@@ -57,7 +61,7 @@ html{
     grid-area: header;
 }
 .nav__ul{
-    background-color: var(--oscuro);
+    background-color: rgba(53, 45, 43,0.95);
     width: 100%;
     height: 70px;
     margin: auto;
@@ -84,7 +88,6 @@ html{
     text-align: center;
     padding: 5px;
     text-decoration: none;
-    position: relative;
     text-align: center;
     margin-top: 15px;
     z-index: 100;
@@ -101,29 +104,31 @@ html{
 
 
 .logoSnack{
-    width: 180px;
+    max-width: 180px;
     position: absolute;
     left: 15px;
     z-index: 110;
     top: 0px;
-
 }
 
 
 /* FIN HEADER  inicio home*/
 
 
+
 /* home new */
 .home__ristrel {
-    height: 50vh;
+    height: 100vh;
     background: linear-gradient(
-        rgba(240, 240, 240, 0.144),
-        rgba(255, 255, 255, 0.336)
+        rgba(240, 240, 240, 0.3),
+        var(--oscuroT)
       ),
-      url("../images/resto.jpg");
+      url("../images/bife.jpg");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
+
   }
   
   .home__container {
@@ -132,33 +137,72 @@ html{
     align-items: center;
     justify-content: center;
     background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.8));
-    color: white;
+    color: var(--claro);
+    text-shadow: 1px 1px 2px var(--oscuro);
     height: 100%;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .main__title{
+    font-size: 3rem;
+  }
+
+  .flecha{
+    position: absolute;
+    bottom: 20px;
+    left: 48.5%;
+    text-decoration: none;
+    color: var(--claro);
+    font-size: 50px;
+    text-align: center;
+
   }
   
   .main-title {
     text-transform: uppercase;
     margin-top: 1.5em;
+    cursor: pointer;
   }
+
+  .boton__home{
+    background:var(--medio);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--claro);
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+
+.boton__home:hover{
+    background: rgb(44, 44, 44);
+    color: white;
+    width: 110px;
+}
 /* actividades */
   .actividad {
+    margin-top: 15px;
     padding: 5rem 0 10rem 0;
+    background: var(--claro);
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
   }
   
   .actividad h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 400;
     margin-bottom: 40px;
     text-transform: uppercase;
-    color: var(--claro)
+    color: var(--oscuro)
   }
   
   .actividad__container {
     display: grid;
     grid-gap: 10px;
-    justify-content: space-between;
+    justify-content: center
   }
   
   .actividad__container img {
@@ -174,7 +218,9 @@ html{
     margin: 0 1rem;
     position: relative;
   }
-  
+  .img-container img{
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
+  }
   .img-content {
     position: absolute;
     top: 70%;
@@ -221,100 +267,7 @@ html{
     opacity: 1;
     top: 40%;
   }
-  /*  */
-
-  /* home new */
-
-  /* .titulo_p{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 0;
-}
-.home h1{
-    display: none;
-}
-.titulo_p img{
-    width: 700px;
-    height: 175px;
-}
-
-.home{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    padding-bottom: 5px;
-}
-
-.home h2{
-    font-size: 2.5rem;
-}
-
-.home__container{
-    height: 550px;
-    width: 550px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-}
-.image__resto{
-    width: 75%;
-    height: 225px;
-    background-image: url("../images/bife.jpg");
-    background-position: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.home h3{
-    color: var(--claro);
-    text-align: center; 
-  
-}
- h2{
-    font-size: 4rem;
-    color: var(--oscuro);
-}
-.image__container{
-    width: 75%;
-    transition: width 1s;
-    
-}
-
-.image__container:hover{
-    width: 80%;
-}
-
-.boton__container{
-    background:darkgray;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    transition: all 0.5s;
-}
-
-.boton__container:hover{
-    background: rgb(44, 44, 44);
-    color: white;
-    width: 120px;
-} */
-/* FIN HOME inicio NOSOTROS*/
-
-
+  /* NOSOTROS */
 
 .us, .us__2{
     display: flex;
@@ -326,19 +279,33 @@ html{
     background: var(--claro);
     padding-bottom: 10px;
     padding-top: 90px;
-
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
 }
 
-
+.us{
+    margin-top: 15px;
+}
 .us__2{
-    background: var(--medio);
-}
+    background: var(--oscuro);
+    flex-direction: row-reverse;
 
+}
+.us h2{
+    font-size: 4.5rem;
+}
 .us__2 h2{
     font-size: 2.5rem;
     color: var(--claro);
+    margin-bottom: 15px;
+    text-align: center;
+}
+.us__2 p{
+    color: var(--medio);
 }
 
+.us__container p{
+    font-size: clamp(1rem,1.2rem,2rem);
+}
 
 .subtitulo__nosotros{
     color: var(--claro);
@@ -346,8 +313,8 @@ html{
 }
 
 .us__container{
-    height: 350px;
-    width: 450px;
+    max-height: 450px;
+    width: clamp(450px,40%,45%);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -360,13 +327,24 @@ html{
 
 
 .us__image__container{
-    width: 100%;
+    width: 90%;
     padding: 5px;
     transition: width 1s;
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.4);
 }
 
-.us__image__container:hover{
-    width: 110%;
+.us__container2{
+    height: 350px;
+    width: clamp(300px,40%,45%);
+    background: url("../images/viejo.jpg");
+    background-size: cover;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+.us__container2:hover{
+    background: url("../images/snack.png");
+    background-size: cover;
+
 }
 
 /* fin NOSOTROS  inicio CONTACTO*/
@@ -625,12 +603,47 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     padding: 20px;
     color: white;
     grid-area: footer;
+    text-align: center;
 }
 
+.footer__redes a{
+    text-decoration: none;
+    color: var(--claro);
+    padding: 10px;
+}
+
+.footer__redes{
+    font-size: 30px;
+}
+.footer__redes i{
+    transition: transform 0.6s;
+}
+.footer__redes i:hover{
+    transform: rotate(360deg);
+}
+
+.footer__info{
+    color: var(--medio);
+    display: flex;
+    flex-direction: column;
+}
+.footer__info a{
+    text-decoration: none;
+    color: var(--medio);
+    font-size: 1.5rem;
+}
+
+.footer__info a:nth-child(2){
+    color: var(--claro);
+}
+
+/* fin FOOTER  */
 
 .formulario{
     display: flex;
@@ -663,8 +676,6 @@ h2{
     justify-content: center;  
 }
 
-
-
 /*fin FOOTER inicio GALERIA*/
 
 .grid__container{
@@ -687,6 +698,7 @@ h2{
     grid-gap: 10px;
     grid-area: galeria;
     margin-top: 100px;
+    background: var(--claro);
     
 }
 
@@ -696,6 +708,7 @@ h2{
 }
 .galeria__imagen{
     position: relative;
+    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
 }
 
 .galeria__img{
@@ -713,16 +726,13 @@ h2{
 .galeria__imagen:nth-child(5){
     grid-row-start: span 3;
 }
-.galeria__imagen:nth-child(6){
+.galeria__imagen:nth-child(6),
+.galeria__imagen:nth-child(9){
     grid-column-start: span 2;
     grid-row-start: span 2;
 }
 .galeria__imagen:nth-child(7){
     grid-row-start: span 2;
-}
-.galeria__imagen:nth-child(9){
-    grid-column-start: span 2;
-    grid-row-start: span 2;    
 }
 .galeria__imagen:nth-child(11){
     grid-column-start: span 3;
@@ -737,8 +747,6 @@ h2{
     }
    
 }
-
-
 
 @media (max-width: 800px){
     .nav{
@@ -758,14 +766,6 @@ h2{
         height: 77px; 
         /* display: none; */
     }
-    .home{
-        flex-direction: row;
-    }
-
-    .boton__container{
-        width: 150px;
-        height: 50px;
-    }
     .boton__nav{
         font-size: 1.6rem;
         padding: 10px;
@@ -774,9 +774,12 @@ h2{
         font-size: 1.7rem;
     }
     .img-container{
-
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.5))
     }
+    .flecha{
+        left: 45%;
+    }
+
 }
 
 @media (max-width: 950px){  
@@ -828,7 +831,6 @@ h2{
     }
 }
 
-
 @media (min-width: 768px){
     .galeria__container{
         grid-template-columns: repeat(4,1fr);
@@ -837,44 +839,77 @@ h2{
         grid-column-start: span 4;
         font-size: 5rem;
     }
-    .galeria__imagen:nth-child(2){
+    .galeria__imagen:nth-child(2),
+    .galeria__imagen:nth-child(10){
        grid-row-start: span 2;
        grid-column-start: span 2;
     }
-    .galeria__imagen:nth-child(3){
+    .galeria__imagen:nth-child(3),
+    .galeria__imagen:nth-child(5),
+    .galeria__imagen:nth-child(8){
         grid-row-start: span 2;
      }
     .galeria__imagen:nth-child(4){
         grid-column-start: span 3;
         grid-row-start: span 2;
      }
-    .galeria__imagen:nth-child(5){
-        grid-row-start: span 2;
-     }
-     .galeria__imagen:nth-child(8){
-        grid-row-start: span 2;
-     }
-     .galeria__imagen:nth-child(10){
-        grid-row-start: span 2;
-        grid-column-start: span 2;
-     }
+
      .galeria__imagen:nth-child(11){
         grid-row-start: span 2;
         grid-column-start: span 4;
      }
  }
 
-
  @media (min-width: 900px){
     .nav__responsive{
         display: none;
     }
-    .home{
-        height: 100vh;
-    }
+
     .actividad__container{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 20px;
     }
  }
+
+
+ /* ANIMACION ATENCION */
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+ @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+
