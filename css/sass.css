@@ -1021,8 +1021,8 @@ html, body {
 
 /* CARDS*/
 .card-body {
-  background: var(--oscuro);
-  color: var(--claro);
+  background: rgb(53, 45, 43);
+  color: rgb(235, 229, 225);
   text-align: center;
 }
 
