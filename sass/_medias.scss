@@ -29,15 +29,30 @@
     .img-container{
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.5))
     }
+    .home__page{
+        height: 60vh;
+    }
     .home__container {
-
           .flecha{
-            left: 55.5%;  
+            padding-bottom: 50px; 
           }
+
+    .borde__us{
+        display: none;
+    }
 
     }    
 
 
+}
+
+@media (max-width: 1400px){ 
+.acordion__container{
+    display: flex;
+}
+.eventos{
+    display: none;
+}
 }
 
 @media (max-width: 950px){  
@@ -51,7 +66,7 @@
         animation-delay: 2.5s;
     }
     .logoSnack{
-        left: 20px;
+        left: 26px;
     }
 
     .actividad__container{
@@ -129,6 +144,13 @@
         grid-column-start: span 3;
         grid-row-start: span 2;
      }
+    
+    .titulo__eventos{
+        
+        p{
+            font-size: 1.5rem;
+        }
+    }
 
 
  }
@@ -154,5 +176,6 @@
     .novedades{
         display: none;
     }
+
 
  }

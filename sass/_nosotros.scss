@@ -8,7 +8,7 @@
     align-items: center;
     background: var(--claro);
     padding-bottom: 10px;
-    padding-top: 90px;
+    padding-top: 40px;
     box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
 
 }
@@ -21,6 +21,7 @@
 }
 .us__2{
     background: var(--oscuro);
+    
     flex-direction: row-reverse;
     h2{
         font-size: 2.5rem;
@@ -94,6 +95,8 @@
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 20px;
+    padding-top: 50PX;
+    background: var(--oscuro);
     h2{
         font-size: 6rem;
     }
@@ -117,7 +120,18 @@
     
     }
 }
-
+.borde__us{
+    width: 100vw;
+    height: 30px;
+    background: linear-gradient(
+        rgba(46, 45, 45, 0.3),
+        var(--oscuroT)
+      ),
+      url("../images/fondo.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
 .resto__mov{
     height: 50vh;
     width: 100vw;
@@ -125,7 +139,7 @@
         rgba(83, 83, 83, 0.699),
         var(--oscuroT)
         ),
-        url("../images/bife.jpg");
+        url("../images/fondo.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;
