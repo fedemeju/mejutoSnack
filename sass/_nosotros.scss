@@ -7,10 +7,9 @@
     align-content: center;
     align-items: center;
     background: var(--claro);
-    padding-bottom: 10px;
-    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-top: 60px;
     box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
-
 }
 
 .us{
@@ -94,9 +93,18 @@
     width: 100vw;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     padding-top: 50PX;
-    background: var(--oscuro);
+    background: var(--oscuroT);
+    // background: var(--oscuro);
+    // background: linear-gradient(
+    //     rgba(46, 45, 45, 0.3),
+    //     var(--oscuroT)
+    //   ),
+    //   url("../images/fondobyn.svg");
+    // background-size: cover;
+    // background-position: bottom;
+    // background-repeat: no-repeat;
     h2{
         font-size: 6rem;
     }
@@ -110,16 +118,29 @@
         height: 500px;
         width: 500px;
         border-radius: 50%;
-        background: linear-gradient(
-            rgba(87, 87, 87, 0.3),
-            var(--oscuroT)
-          ),
-          url("../images/bife.jpg");
+        background: url("../images/bife.jpg");
         background-size: cover;
         box-shadow: var(--sombra);
     
     }
 }
+
+.snack__web{
+    @extend .resto__web;
+    background: var(--claro);
+    // background: linear-gradient(
+    //     rgba(46, 45, 45, 0.3),
+    //     var(--oscuroT)
+    //   ),
+    //   url("../images/fondo.svg");
+    .us__container__resto{
+        background:  url("../images/snack.png");
+}
+    .subtitulo__nosotros{
+        color: var(--medio);
+    }
+}
+
 .borde__us{
     width: 100vw;
     height: 30px;
@@ -139,7 +160,7 @@
         rgba(83, 83, 83, 0.699),
         var(--oscuroT)
         ),
-        url("../images/fondo.svg");
+        url("../images/fondobyn.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -154,6 +175,16 @@
 
 }
 
+.snack__mov{
+    @extend.resto__mov;
+    background: linear-gradient(
+        rgba(83, 83, 83, 0.699),
+        var(--oscuroT)
+        ),
+        url("../images/fondo.svg");
+    background-size: cover;
+    
+}
 
 .boton__home{
     background:var(--medio);
