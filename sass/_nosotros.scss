@@ -80,22 +80,21 @@
         padding-bottom: 30px;
     }
     
-    .subtitulo__nosotros{
-        color: var(--medio);
-    font-size: 2rem;
-}
 
 }
 
 .resto__web{
-
+    .subtitulo__nosotros{
+    color: var(--oscuro);
+    font-size: 2rem;
+    }
     display: flex;
     width: 100vw;
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 60px;
     padding-top: 50PX;
-    background: var(--oscuroT);
+    background: var(--medio);
     // background: var(--oscuro);
     // background: linear-gradient(
     //     rgba(46, 45, 45, 0.3),
@@ -187,7 +186,7 @@
 }
 
 .boton__home{
-    background:var(--medio);
+    background:var(--oscuro);
     width: 100px;
     height: 50px;
     text-align: center;
