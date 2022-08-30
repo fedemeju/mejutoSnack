@@ -1,0 +1,36 @@
+@mixin centrarcajas {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+@mixin fondoresto{
+    background: linear-gradient(
+        rgba(46, 45, 45, 0.3),
+        var(--oscuroT)
+      ),
+      url("../images/fondobyn.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat
+}
+
+@mixin botonhome {
+    background:var(--oscuro);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--claro);
+    transition: all 0.5s;
+    box-shadow: var(--sombra);
+    border-radius: 5px;
+    font-size: 1.5rem;
+         &:hover{
+            background: rgb(44, 44, 44);
+            color: white;
+            width: 110px;
+        }
+}

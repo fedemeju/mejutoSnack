@@ -1,5 +1,6 @@
 
 // se aplican en orden de importancia "CASCADA
+@import "mixin";
 @import "general";
 @import "navBar";
 @import "home";
@@ -21,77 +22,6 @@ $oscuro: rgb(53, 45, 43);
 
   
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-// h2 {
-//   vertical-align: center;
-//   text-align: center;
-// }
-
-// html, body {
-//   margin: 0;
-//   height: 100%;
-// }
-
-// * {
-//   font-family: "Raleway";
-//   box-sizing: border-box;
-// }
-
-
-
-/* CARDS*/
-.card-body{
-    background: $oscuro;
-    color: $claro;
-    text-align: center;
-}
-.card-body h5{
-    font-size: 2.5rem;
-    font-weight: bolder;
-}
-.card-body p{
-    font-size: 1.5rem;
-}
-
-.card-body .boton__card{
-    text-decoration: none;
-}
-
-
-.formulario{
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
-    justify-content: center;
-}
-
-.contacto{
-   
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    padding: 1.5rem;
-    color: antiquewhite;
-    align-items: center;
-    font-size: 1.2rem;
-    background-color: darkgray;
-    margin-bottom: 140px;
-}
-
-.titulo__contacto{
-    display: flex;
-    padding-top: 100px;
-    align-items: center;
-    justify-content: center;  
-}
-
-/*fin FOOTER inicio GALERIA*/
-
-
-
 
 
 

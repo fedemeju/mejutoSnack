@@ -1,64 +1,73 @@
 /* actividades */
+
+
+.logo__cont{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  .logo__act{
+    text-align: center;
+    width: 800px;
+  }
+}
+
 .actividad {
     margin-top: 15px;
     padding: 5rem 0 10rem 0;
-    background: linear-gradient(rgba(148, 148, 148, 0.2),
-    rgba(0,0,0,0.5));
+    background: var(--claro);
     box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
+    h2 {
+      text-align: center;
+      font-size: 4.5rem;
+      font-weight: 400;
+      margin-bottom: 40px;
+      // text-transform: uppercase;
+      color: var(--oscuro)
+    }
+
+    .actividad__container {
+      display: grid;
+      grid-gap: 10px;
+      padding: 40px;
+      justify-content: center;
+      grid-template-columns: repeat(2,1fr);
+
+      .img-content {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        z-index: 2;
+        text-align: center;
+        transition: all 0.3s ease-in-out 0.1s;
+        h3 {
+          color: #fff;
+          font-size: 2.2rem;
+          text-align: center;
+        }
+        a {
+          font-size: 1.2rem;
+        }
+      }
+      
+      img {
+        display: block;
+        width: 100%;
+        margin: auto;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        box-shadow: var(--sombra);
+      }
+      .img-container {
+        margin: 0 1rem;
+        position: relative;
+      }
+    }
   }
-  
-  .actividad h2 {
-    text-align: center;
-    font-size: 4.5rem;
-    font-weight: 400;
-    margin-bottom: 40px;
-    // text-transform: uppercase;
-    color: var(--oscuro)
-  }
-  .actividad__container {
-    display: grid;
-    grid-gap: 10px;
-    justify-content: center;
-    grid-template-columns: repeat(2,1fr);
-  }
-  
-  .actividad__container img {
-    display: block;
-    width: 100%;
-    margin: auto;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-  }
-  
-  .img-container {
-    margin: 0 1rem;
-    position: relative;
-  }
-  .img-container img{
-    box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.67);
-  }
-  .img-content {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    z-index: 2;
-    text-align: center;
-    transition: all 0.3s ease-in-out 0.1s;
-  }
-  
-  .img-content h3 {
-    color: #fff;
-    font-size: 2.2rem;
-  }
-  
-  .img-content a {
-    font-size: 1.2rem;
-  }
-  
+
   .img-container::after {
     content: "";
     display: block;

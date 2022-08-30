@@ -2,12 +2,9 @@
 .footer{
     bottom: 0;
     background:  var(--oscuro);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
     align-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    @include centrarcajas;
     padding: 20px;
     color: white;
     grid-area: footer;

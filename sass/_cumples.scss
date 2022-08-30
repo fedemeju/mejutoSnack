@@ -73,7 +73,7 @@
 
                 
 
-                    &::hover{
+                    &:hover{
                         color: var(--medio);
                     }
             }
@@ -93,10 +93,8 @@
 
   h3{
         font-size: 3rem;
-        display: flex;
-        flex-direction: column;
+        @include centrarcajas;
         flex-wrap: wrap;
-        justify-content: center;
         color: white;
         text-align: center;
     }
