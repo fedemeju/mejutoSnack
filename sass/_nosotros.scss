@@ -55,17 +55,22 @@
     flex-wrap: wrap;
     align-content: center;
     padding: 0 12px 0 12px;
-    
+    h2{
+        margin: 0;
+    }
+    h3{
+        margin: 0 0 20px 0;
+    }
 
     p{
-        font-size: clamp(1.1rem,1.2rem,2rem);
+        font-size: clamp(1.1rem,1.5rem,2rem);
     }
     .us__image__container{
         width: 95%;
         transition: width 1s;
         box-shadow: 7px 7px 9px -5px rgba(94,94,94,0.4);
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.8));
-
+        border-radius: 5px;
     }
 
     
@@ -83,7 +88,9 @@
         }
 }
 
-
+.us__container2{
+    @extend .us__container;
+}
 .resto__web{
     .subtitulo__nosotros{
     color: var(--claro);

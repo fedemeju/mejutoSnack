@@ -1,8 +1,6 @@
 
 .footer{
-    bottom: 0;
     background:  var(--oscuro);
-    align-content: center;
     flex-wrap: wrap;
     @include centrarcajas;
     padding: 20px;

@@ -1,11 +1,13 @@
 
 .grid__layout{
+	height: 100%;
 	display: grid;
 	grid-template-areas: 
 	'header'
 	'contacto'
 	'footer';
 	grid-template-rows: 70px 1fr 200px;
+	grid-template-columns: 1fr;
 }
 
 

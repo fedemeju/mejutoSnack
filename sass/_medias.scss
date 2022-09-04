@@ -7,6 +7,10 @@
 }
 
 @media (max-width: 800px){
+    
+    .us__container2{
+        display: none;
+    }
     .nav{
         display: none;
     }
@@ -52,9 +56,7 @@
 }
 
 @media (max-width: 1400px){ 
-.acordion__container{
-    display: flex;
-}
+
 .eventos{
     display: none;
 }
@@ -133,17 +135,7 @@
 }
 
 @media (max-width: 768px){
-    .accordionItem {
-        max-height: 15em;
-        -moz-transition: max-height 0.5s;
-        -o-transition: max-height 0.5s;
-        -webkit-transition: max-height 0.5s;
-        transition: max-height 0.5s;
-      }
-      .acordion__li{
-        font-size: 1rem;
-  
-      }
+
     .galeria__imagen:nth-child(10){
        grid-row-start: span 2;
        grid-column-start: span 2;
@@ -177,13 +169,14 @@
         grid-template-rows: 1fr 1fr;
         grid-gap: 20px;
     }
+    .novedades{
+        display: none;
+    }
+
  }
 
  @media (min-width: 1100px){
     .card-group{
-        display: none;
-    }
-    .novedades{
         display: none;
     }
  }
