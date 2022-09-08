@@ -53,10 +53,11 @@ body {
 .footer .footer__info a {
   text-decoration: none;
   color: var(--medio);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 .footer .footer__info a:nth-child(2) {
   color: var(--claro);
+  font-size: 1.3rem;
 }
 .footer .footer__redes {
   font-size: 30px;
@@ -352,6 +353,7 @@ body {
   height: 75px;
   padding: 1em;
   position: fixed;
+  font-weight: bolder;
   width: 100vw;
   z-index: 200;
   border-bottom: 10px solid rgba(90, 90, 90, 0.63);
@@ -409,7 +411,7 @@ body {
   position: absolute;
   height: 4px;
   width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
 
@@ -456,12 +458,12 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu-nav li {
     height: 2.5em;
     padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .menu-nav > li {
     display: flex;
@@ -540,6 +542,7 @@ body {
 }
 .us h2 {
   font-size: 4.5rem;
+  font-weight: bold;
 }
 
 .us__2 {
@@ -676,7 +679,7 @@ body {
   background-size: cover;
 }
 
-.boton__home {
+.boton__home, .boton__home2 {
   background: var(--oscuro);
   width: 100px;
   height: 50px;
@@ -689,31 +692,16 @@ body {
   border-radius: 5px;
   font-size: 1.5rem;
 }
-.boton__home:hover {
+.boton__home:hover, .boton__home2:hover {
   background: rgb(44, 44, 44);
   color: white;
   width: 110px;
 }
 
 .boton__home2 {
-  background: var(--oscuro);
-  width: 100px;
-  height: 50px;
-  text-align: center;
-  padding: 5px;
-  text-decoration: none;
-  color: var(--claro);
-  transition: all 0.5s;
-  box-shadow: var(--sombra);
-  border-radius: 5px;
-  font-size: 1.5rem;
   background: var(--claro);
   color: var(--oscuro);
-}
-.boton__home2:hover {
-  background: rgb(44, 44, 44);
-  color: white;
-  width: 110px;
+  box-shadow: var(--sombra);
 }
 
 .titulo__eventos {
@@ -731,6 +719,7 @@ body {
 }
 .titulo__eventos h2 {
   font-size: 5rem;
+  padding-bottom: 15px;
   color: var(--oscuro);
 }
 
@@ -802,14 +791,17 @@ body {
 }
 .accordionItem h3 {
   text-align: center;
+  padding-top: 15px;
+  font-size: 1.7rem;
 }
 .accordionItem ul {
   list-style: none;
-  padding: 10px;
+  padding: 5px;
 }
 .accordionItem ul li {
   font-size: 1.4rem;
   color: var(--oscuro);
+  padding: 10px;
 }
 
 @media all {
@@ -970,6 +962,7 @@ body {
   border-bottom: 3px solid var(--oscuro);
   color: var(--oscuro);
   text-align: center;
+  font-size: 3rem;
 }
 .cumples__snack .cumples h3 {
   color: var(--naranja);
@@ -1004,19 +997,12 @@ body {
   color: var(--medio);
 }
 
-.menu__cumples {
-  margin: 0;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
 .menu__cumples h3 {
   font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
   color: white;
   text-align: center;
 }
@@ -1027,8 +1013,7 @@ body {
   justify-content: center;
   padding-bottom: 5rem;
   padding-top: 2rem;
-  width: 100%;
-  margin: 0;
+  padding-right: 35px;
 }
 .menu__cumples ul li {
   background: var(--naranja);
@@ -1572,13 +1557,14 @@ textarea {
 }
 .timeline-card p {
   padding: 20px;
+  font-size: 1.5rem;
 }
 .timeline-card a {
   margin-left: 20px;
 }
 
 .timeline-item:nth-child(1) .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/10.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/19.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -1588,32 +1574,35 @@ textarea {
 }
 
 .timeline-item:nth-child(3) .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("../images/timeline/8.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("../images/timeline/18.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .timeline-item:nth-child(4) .timeline-img-header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/timeline/20.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(4) .timeline-img-header h2 {
+  font-size: 2rem;
+}
+
+.timeline-item:nth-child(5) .timeline-img-header {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/11.jpg") center center no-repeat;
   background-size: cover;
 }
 
-.timeline-item:nth-child(5) .timeline-img-header {
+.timeline-item:nth-child(6) .timeline-img-header {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/3.jpg") center center no-repeat;
   background-size: cover;
 }
 
-.timeline-item:nth-child(6) .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/timeline/4.jpg") center center no-repeat;
-  background-size: cover;
-}
-
 .timeline-item:nth-child(7) .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/timeline/2.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/timeline/2.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .timeline-item:nth-child(8) .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url("../images/timeline/1.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65)), url("../images/timeline/1.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -1628,11 +1617,24 @@ textarea {
 }
 
 .timeline-item:nth-child(11) .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/timeline/14.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/timeline/21.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .timeline-item:nth-child(12) .timeline-img-header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/timeline/22.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(12) h2 {
+  font-size: 2.2rem;
+}
+
+.timeline-item:nth-child(13) .timeline-img-header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/timeline/14.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-item:nth-child(14) .timeline-img-header {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url("../images/timeline/15.jpg") center center no-repeat;
   background-size: cover;
 }
@@ -1703,6 +1705,9 @@ blockquote {
   }
 }
 @media (max-width: 800px) {
+  .timeline-card p {
+    font-size: 1.1rem;
+  }
   .us__container2 {
     display: none;
   }

@@ -16,6 +16,7 @@
     margin-top: 15px;
     h2{
         font-size: 4.5rem;
+        font-weight: bold;
     }
 }
 .us__2{
@@ -165,7 +166,8 @@
 }
 
 .boton__home2{
-    @include botonhome;
+    @extend .boton__home;
     background: var(--claro);
-    color: var(--oscuro)
+    color: var(--oscuro);
+    box-shadow: var(--sombra);
 }

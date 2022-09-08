@@ -116,6 +116,8 @@ $accent: #FF4081;
 
 	p {
 		padding: 20px;
+		font-size: 1.5rem;
+		// text-align: center;
 	}
 
 	a {
@@ -126,7 +128,7 @@ $accent: #FF4081;
 .timeline-item:nth-child(1) {
   .timeline-img-header {
 			background: linear-gradient(rgba(0,0,0,0),
-             rgba(0,0,0, .4)), url('../images/timeline/10.jpg') 
+             rgba(0,0,0, .4)), url('../images/timeline/19.jpg') 
              center center no-repeat;
 			background-size: cover;
 		}				
@@ -145,7 +147,7 @@ $accent: #FF4081;
 .timeline-item:nth-child(3) {
 	.timeline-img-header {
 			  background: linear-gradient(rgba(0,0,0,0),
-			   rgba(0,0,0, .2)), url('../images/timeline/8.jpg') 
+			   rgba(0,0,0, .2)), url('../images/timeline/18.jpg') 
 			   center center no-repeat;
 			  background-size: cover;
 		  }				
@@ -154,15 +156,18 @@ $accent: #FF4081;
   .timeline-item:nth-child(4) {
 	.timeline-img-header {
 			  background: linear-gradient(rgba(0,0,0,0),
-			   rgba(0,0,0, .4)), url('../images/timeline/11.jpg') 
+			   rgba(0,0,0, .7)), url('../images/timeline/20.jpg') 
 			   center center no-repeat;
 			  background-size: cover;
+			  h2{
+				font-size: 2rem;
+			  }
 		  }				
   }
   .timeline-item:nth-child(5) {
 	.timeline-img-header {
 			  background: linear-gradient(rgba(0,0,0,0),
-			   rgba(0,0,0, .4)), url('../images/timeline/3.jpg') 
+			   rgba(0,0,0, .4)), url('../images/timeline/11.jpg') 
 			   center center no-repeat;
 			  background-size: cover;
 		  }				
@@ -171,7 +176,7 @@ $accent: #FF4081;
   .timeline-item:nth-child(6) {
 	.timeline-img-header {
 			  background: linear-gradient(rgba(0,0,0,0),
-			   rgba(0,0,0, .7)), url('../images/timeline/4.jpg') 
+			   rgba(0,0,0, .4)), url('../images/timeline/3.jpg') 
 			   center center no-repeat;
 			  background-size: cover;
 		  }				
@@ -180,7 +185,7 @@ $accent: #FF4081;
   .timeline-item:nth-child(7) {
 	.timeline-img-header {
 			  background: linear-gradient(rgba(0,0,0,0),
-			   rgba(0,0,0, .7)), url('../images/timeline/2.jpg') 
+			   rgba(0,0,0, .5)), url('../images/timeline/2.jpg') 
 			   center center no-repeat;
 			  background-size: cover;
 		  }				
@@ -189,7 +194,7 @@ $accent: #FF4081;
   .timeline-item:nth-child(8) {
 	.timeline-img-header {
 			  background: linear-gradient(rgba(0,0,0,0),
-			   rgba(0,0,0, .2)), url('../images/timeline/1.jpg') 
+			   rgba(0,0,0, .65)), url('../images/timeline/1.jpg') 
 			   center center no-repeat;
 			  background-size: cover;
 		  }				
@@ -211,9 +216,28 @@ $accent: #FF4081;
 			  background-size: cover;
 		  }				
   }
-
-  
   .timeline-item:nth-child(11) {
+	.timeline-img-header {
+			  background: linear-gradient(rgba(0,0,0,0),
+			   rgba(0,0,0, .5)), url('../images/timeline/21.jpg') 
+			   center center no-repeat;
+			  background-size: cover;
+		  }				
+  }
+
+  .timeline-item:nth-child(12) {
+	.timeline-img-header {
+			  background: linear-gradient(rgba(0,0,0,0),
+			   rgba(0,0,0, .5)), url('../images/timeline/22.jpg') 
+			   center center no-repeat;
+			  background-size: cover;
+		  }	
+		  h2{
+			font-size: 2.2rem;
+		  }			
+  }
+  
+  .timeline-item:nth-child(13) {
 	.timeline-img-header {
 			  background: linear-gradient(rgba(0,0,0,0),
 			   rgba(0,0,0, .5)), url('../images/timeline/14.jpg') 
@@ -222,7 +246,7 @@ $accent: #FF4081;
 		  }				
   }
 
-  .timeline-item:nth-child(12) {
+  .timeline-item:nth-child(14) {
 	.timeline-img-header {
 			  background: linear-gradient(rgba(0,0,0,0),
 			   rgba(0,0,0, .1)), url('../images/timeline/15.jpg') 
