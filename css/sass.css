@@ -18,6 +18,7 @@
 body {
   background: var(--claro);
   height: 100%;
+  position: relative;
 }
 
 html {
@@ -44,6 +45,7 @@ body {
   color: white;
   grid-area: footer;
   text-align: center;
+  width: 100vw;
 }
 .footer .footer__info {
   color: var(--medio);
@@ -731,6 +733,7 @@ body {
   align-items: center;
   margin-bottom: 80px;
   position: relative;
+  padding-top: 25px;
   background-color: var(--claro);
 }
 
@@ -765,7 +768,7 @@ body {
   background-color: var(--oscuro);
   border-bottom: 1px solid #2c3e50;
   width: 80vw;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .accordionTitle:before {
@@ -820,13 +823,13 @@ body {
 .boton__acordion {
   width: 80vw;
   height: 140px;
-  padding: 1.8rem;
+  padding: 1.5rem;
   background: var(--naranja);
   text-decoration: none;
   color: var(--oscuro);
   text-align: center;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 30px;
 }
 .boton__acordion:hover {
@@ -1341,10 +1344,10 @@ body {
 }
 
 .grid__layout {
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template-areas: "header" "contacto" "footer";
-  grid-template-rows: 70px 1fr 200px;
+  grid-template-rows: 70px 1fr 150px;
   grid-template-columns: 1fr;
 }
 

@@ -33,8 +33,8 @@
       <ul class="menu-nav">
               <li><a class="boton__res" href="../index.html">HOME</a></li>
               <li><a class="boton__res" href="eventos.html">EVENTOS</a></li>
-              <li><a class="boton__res" href="cumples.html">CUMPLES</a></li>            <li><a class="boton__res" href="https://queresto.com/snackbowling">CARTA</a></li> 
-              <li><a class="boton__res" href="https://queresto.com/snackbowling">CARTA</a></li> 
+              <li><a class="boton__res" href="cumples.html">CUMPLES</a></li>
+              <li><a class="boton__res" href="https://queresto.com/snackbowling" target="_blank">CARTA</a></li> 
               <li><a class="boton__res" href="historia.html">HISTORIA</a></li>
               <li><a class="boton__res" href="contacto.html">CONTACTO</a></li> 
       </ul>
@@ -43,20 +43,23 @@
     </section>
   
   
-  
-  <div class="container">
+
+    <div class="container">
       <div class="contact-box">
-          <div class="left"></div>
-          <div class="right">
-              <h2 class="titulo__contacto">Contacto</h2>
-              <input type="text" class="field" placeholder="Nombre">
-              <input type="email" class="field" placeholder="Email">
-              <input type="text" class="field" placeholder="Asunto">
-              <textarea placeholder="Dejanos tu consulta" class="field"></textarea>
-              <button class="btn">Enviar</button>
-          </div>
-      </div>
-  </div>
+            <div class="left"></div>
+            <div class="right">
+              <form onsubmit="sendEMail(); reset(); return false;">     
+                 <h2 class="titulo__contacto">Contacto</h2>
+                   <input type="text" class="field" placeholder="Nombre" required id="name">
+                   <input type="email" class="field" placeholder="Email" required id="email">
+                   <input type="text" class="field" placeholder="Asunto" required id="message">
+                   <textarea placeholder="Dejanos tu consulta" class="field"></textarea>
+                   <button type="submit" class="btn">Enviar</button>
+              </form>
+            </div>
+        </div>
+    </div>
+  
   
   
   
@@ -80,11 +83,7 @@
             <i class="fa-sharp fa-solid fa-phone"></i>
             4792-8009
           </a>
-      </div>  
-  </footer>
-
-</div>
-    <!-- script botstrap -->
+      </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -92,5 +91,24 @@
     </script>
         <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/8cced7e539.js" crossorigin="anonymous"></script>
+    <!-- mail -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      function sendEMail(){
+
+        Email.send({
+         Host : "c2290832.ferozo.com",
+         Username : "emiliano@snackbowling.com.ar",
+         Password : "0q8/O0N3al",
+         To : 'federicomejuto95@gmail.com',
+         From : document.getElementById("email").value,
+         Subject : "Consulta desde la web",
+         Body : "And this is the body"
+         }).then(
+           message => alert(message)
+         );
+      }
+    </script>
 </body>
 </html>
