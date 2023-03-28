@@ -706,6 +706,15 @@ body {
   box-shadow: var(--sombra);
 }
 
+.acordion__li2 {
+  font-size: 1.2rem !important;
+  padding-left: 50px !important;
+}
+.acordion__li2 i {
+  color: white;
+  font-size: 1.2rem;
+}
+
 .titulo__eventos {
   padding-top: 100px;
   display: flex;
@@ -794,8 +803,13 @@ body {
 }
 .accordionItem h3 {
   text-align: center;
-  padding-top: 15px;
-  font-size: 1.7rem;
+  padding-top: 25px;
+  font-size: 1.8rem;
+  color: var(--oscuro);
+}
+.accordionItem h4 {
+  text-align: center;
+  color: var(--claro);
 }
 .accordionItem ul {
   list-style: none;
@@ -824,6 +838,7 @@ body {
   width: 80vw;
   height: 140px;
   padding: 1.5rem;
+  padding-top: 55px;
   background: var(--naranja);
   text-decoration: none;
   color: var(--oscuro);
@@ -1582,7 +1597,7 @@ textarea {
 }
 
 .timeline-item:nth-child(4) .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/timeline/20.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../images/timeline/20.jpg") top center no-repeat;
   background-size: cover;
 }
 .timeline-item:nth-child(4) .timeline-img-header h2 {
