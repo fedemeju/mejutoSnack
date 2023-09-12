@@ -22,6 +22,16 @@
             transition: transform 1s;
         }
     }
+.precios{
+  text-align: center;
+  justify-content: center;
+  background-color: var(--naranja);
+  color: var(--oscuro);
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 150px;
+}
 
     .cumples{
         display: flex;

@@ -987,6 +987,16 @@ body {
   transform: rotate(-25deg);
   transition: transform 1s;
 }
+.cumples__snack .precios {
+  text-align: center;
+  justify-content: center;
+  background-color: var(--naranja);
+  color: var(--oscuro);
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 150px;
+}
 .cumples__snack .cumples {
   display: flex;
   align-content: center;
