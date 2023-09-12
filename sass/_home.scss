@@ -1,3 +1,28 @@
+// whatsapp
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:20px;
+	background-color:#65bd85;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.float:visited{
+  color:white;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
 /* home new */
 
 
