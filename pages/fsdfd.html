@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cumples Infantiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(to bottom, #fce3b4, #f4c078);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #3c2f1e;
+      margin-bottom: 2rem;
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .plan {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      padding: 2rem;
+      width: 300px;
+      text-align: left;
+    }
+
+    .plan h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .plan h3 {
+      color: #f39c12;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .plan li {
+      margin-bottom: 0.7rem;
+      font-size: 1rem;
+    }
+
+    .plan li span {
+      margin-right: 0.5rem;
+    }
+
+    .extra {
+      color: #f39c12;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cumples Infantiles</h1>
+
+  <div class="plans">
+    <div class="plan">
+      <h2>Paquete Base</h2>
+      <h3>🎂 Comida + 🎳 Bowling + 😄 Diversión</h3>
+      <ul>
+        <li><span>✔️</span> 1 línea de bowling + tiros libres</li>
+        <li><span>🥤</span> Bebida libre (Pepsi o Agua)</li>
+        <li><span>🎁</span> Regalo para el homenajeado</li>
+        <li><span>⏱️</span> Duración dos horas</li>
+        <li><span>👦</span> Mínimo 15 chicos</li>
+        <li><span>✉️</span> Invitaciones Digitales o Físicas</li>
+        <li><span>🍽️</span> Menú a elección:</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;🍔 Hamburguesa con papas fritas</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;🍕 Pizza con papas fritas</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;🌭 Panchos con papas fritas</li>
+      </ul>
+    </div>
+
+    <div class="plan">
+      <h2>Paquete Full</h2>
+      <h3>🎂 Comida + 🎳 Bowling + 😄 Diversión</h3>
+      <ul>
+        <li><span>✔️</span> 1 línea de bowling + tiros libres</li>
+        <li><span>🥤</span> Bebida libre (Pepsi o Agua)</li>
+        <li><span>🎁</span> Regalo para el homenajeado</li>
+        <li class="extra"><span>🍿</span> Entrada de snacks</li>
+        <li><span>⏱️</span> Duración dos horas</li>
+        <li class="extra"><span>🎫</span> Cuponera con líneas gratis para el homenajeado</li>
+        <li class="extra"><span>🏆</span> Premiación con trofeos y medallas</li>
+        <li><span>✉️</span> Invitaciones Digitales o Físicas</li>
+        <li><span>👦</span> Mínimo 15 chicos</li>
+        <li><span>🍽️</span> Menú a elección:</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;🍔 Hamburguesa con papas fritas</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;🍕 Pizza con papas fritas</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;🌭 Panchos con papas fritas</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

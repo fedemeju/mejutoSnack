@@ -335,12 +335,32 @@ body {
     transform: scale(0.8);
   }
 }
-.logoSnack {
+.logoSnack ,logoSnacky{
   max-width: 220px;
   position: absolute;
   left: 22px;
   z-index: 110;
   top: 5px;
+}
+
+.logoSnacky{
+   /* max-width: 300px !important; */
+}
+
+.imgSnackyContainer{
+display: flex;
+justify-content: center;
+padding-top: 55px;
+flex-direction: column;
+align-items: center;
+}
+.imgSnacky{
+  max-width: 500px;
+}
+
+.subtituloSnacky{
+  font-size: 30px;
+  text-align: center;
 }
 
 .top-nav {
@@ -969,9 +989,27 @@ body {
   background: linear-gradient(rgba(243, 227, 196, 0.541), rgba(236, 163, 28, 0.829));
   font-family: "DynaPuff", cursive;
 }
+
+.destacado {
+  border: 3px solid gold;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 100px;
+}
+.destacado:hover {
+  transform: scale(1.05);
+}
+.subtitulo-full {
+  font-weight: bold;
+  color: #ff9900;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
 .cumples__snack .titulo__cumples {
   display: flex;
-  padding-top: 120px;
+  /* padding-top: 120px; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -1726,7 +1764,9 @@ blockquote {
 
 @media screen and (max-width: 768px) {
   .timeline::before {
-    left: 50px;
+    left: 50px;  .logoSnacky{
+      max-width: 650px;
+   }
   }
   .timeline .timeline-img {
     left: 50px;
@@ -1861,6 +1901,10 @@ blockquote {
   .titulo__cumples h2 {
     display: none;
   }
+  .logoSnacky{
+    max-width:350px;
+    padding-top: 20px
+  }
 }
 @media (max-width: 768px) {
   .galeria__imagen:nth-child(10) {
@@ -1895,11 +1939,90 @@ blockquote {
   .novedades {
     display: none;
   }
+
 }
 @media (min-width: 1100px) {
   .card-group {
     display: none;
   }
+  .logoSnacky{
+    max-width: 650px;
+ }
 }
+
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
 
 /*# sourceMappingURL=sass.css.map */
